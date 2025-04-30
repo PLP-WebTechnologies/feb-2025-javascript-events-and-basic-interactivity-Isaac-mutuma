@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Form</h1>
+        <form id="contactForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" id="submitButton">Submit</button>
+        </form>
+
+        <div id="errorMessages"></div>
+
+        <button id="showMessageButton">Show a Secret Message</button>
+        <p id="secretMessage" style="display:none;">This is a secret message!</p>
+    </div>
+
+    <!-- Link to JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
